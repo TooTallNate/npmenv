@@ -14,15 +14,16 @@ module.exports = parse;
  * @public
  */
 
-function parse (env) {
+function parse (env, prefix) {
   if (!env) env = process.env;
+  if (!prefix) prefix = 'npm_config_';
   var props = {};
-  var npm_config_prefix = 'npm_config_';
-  Object.keys(process.env).forEach(function (name) {
-    if (name.indexOf(npm_config_prefix) !== 0) return;
-    var val = process.env[name];
+  var keys = Object.keys(env);
+  keys.forEach(function (name) {
+    if (name.indexOf(prefix) !== 0) return;
+    var val = env[name];
     // add the user-defined options to the config
-    name = name.substring(npm_config_prefix.length);
+    name = name.substring(prefix.length);
     props[name] = val;
   });
   return props;
