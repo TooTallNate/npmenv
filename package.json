@@ -1,0 +1,28 @@
+{
+  "name": "npmenv",
+  "version": "0.0.0",
+  "description": "Parses the `npm_config` environment variables passed through from `npm`",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/TooTallNate/npmenv.git"
+  },
+  "keywords": [
+    "npm",
+    "env",
+    "lifecycle",
+    "script",
+    "environment",
+    "variable",
+    "npm_config"
+  ],
+  "author": "Nathan Rajlich <nathan@tootallnate.net> (http://n8.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TooTallNate/npmenv/issues"
+  },
+  "homepage": "https://github.com/TooTallNate/npmenv"
+}
