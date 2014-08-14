@@ -1,6 +1,6 @@
 {
   "name": "npmenv",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Parses the `npm_config` environment variables passed through from `npm`",
   "main": "index.js",
   "scripts": {
